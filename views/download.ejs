@@ -1,0 +1,122 @@
+<%- include("partials/header"); -%>
+
+<div id="download">
+
+    <h1>Download</h1>
+    
+    <ul>
+
+        <li class="computer">Computer
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="computer"){ %> 
+                    <li><%= download.contentTitle %> 
+                    
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+        <li class="electronics">Electronics
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="electronics"){ %> 
+                    <li><%= download.contentTitle %> 
+                        
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+        <li class="electrical">Electrical
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="electrical"){ %> 
+                    <li><%= download.contentTitle %> 
+                        
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+        <li class="instrumentation">Instrumentation
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="instrumentation"){ %> 
+                    <li><%= download.contentTitle %> 
+                        
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+        <li class="mechanical">Mechanical
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="mechanical"){ %> 
+                    <li><%= download.contentTitle %> 
+                        
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+        <li class="civil">Civil
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="civil"){ %> 
+                    <li><%= download.contentTitle %> 
+                        
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+        <li class="architecture">Architecture
+            <ul>
+                <% downloadarray.forEach(function(download){ %>
+
+                    <% if(download.contentBranch=="architecture"){ %> 
+                    <li><%= download.contentTitle %> 
+                        
+                    <a href="<%= download.contentLink %>"> Download</a>
+                    <% }%>
+                </li>
+                <% }) %> 
+                
+            </ul>
+
+        </li>
+
+</div>  
+<%- include("partials/footer"); -%>

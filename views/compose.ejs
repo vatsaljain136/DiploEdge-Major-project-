@@ -1,0 +1,46 @@
+<%- include("partials/header"); -%>
+
+
+    <form class="article" action="/article"  method="post" autocomplete="off">
+        <div class="form-group">
+            <h1>Article</h1>
+            <label>Title</label>
+            <input type="text" name="Title" class="form-control">
+            <label>content</label>
+            <textarea name="Content" rows="5" collon="50" class="form-control"></textarea>
+            <label>link</label>
+            <input type="text" name="Link" class="form-control">
+            <label>img link</label>
+            <input type="text" name="imgLink" class="form-control">
+            <button class="btn btn-primary" type="submit" name="button">Add</button>
+        </div>
+    </form>
+
+    <form class="notice" action="/notices"  method="post" autocomplete="off">
+        <div class="form-group">
+            <h1>Notice</h1>
+            <label>Title</label>
+            <input type="text" name="Title" class="form-control">
+            <label>content</label>
+            <textarea name="Content" rows="5" collon="50" class="form-control"></textarea>
+            <label>link</label>
+            <input type="text" name="Link" class="form-control">
+            <button class="btn btn-primary" type="submit" name="button">Add</button>
+        </div>
+    </form>
+
+    <form class="download" action="/download"  method="post" autocomplete="off">
+        <div class="form-group">
+            <h1>Downloads</h1>
+            <label>Title</label>
+            <input type="text" name="Title" class="form-control">
+            <label>Branch</label>
+            <input type="text" name="Branch" class="form-control">
+            <label>link</label>
+            <input type="text" name="Link" class="form-control">
+            <button class="btn btn-primary" type="submit" name="button">Add</button>
+        </div>
+    </form>
+
+
+<%- include("partials/footer"); -%>
